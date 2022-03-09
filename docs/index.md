@@ -7,7 +7,7 @@ Departemen Teknologi Elektro dan Teknologi Informasi, Fakultas Teknik, Universit
 
 ---
 
-**Nama Kelompok: Daredevil**
+**Nama Kelompok:** Daredevil  
 **Ketua:** Firdaus Bisma Suryakusuma - 19/444051/TK/49247 (Software Engineer)  
 **Anggota:**
 Abdurikho Min Khoiri - 19/440885/TK/48679 (Cloud Engineer)
@@ -25,7 +25,7 @@ Jenis Produk: Aplikasi Web
 #### Latar Belakang
 Buta warna merupakan kelainan yang dimiliki seseorang yang tidak mampu melihat warna objek seperti yang dilihat oleh orang normal. penderita buta warna di Indonesia sendiri tidak sedikit. setidaknya ada 0,7% dari 255 juta warga indonesia menderita buta warna. akan tetapi, banyak pekerjaan yang mensyaratkan pegawainya bukan merupakan penderita buta warna. Dalam masalah ini, terjadi diskriminasi terhadap para penderita buta warna dalam memperoleh hak mendapatkan pekerjaan. Misalnya dalam tes kedinasan terdapat beberapa tahapan tes yang harus dilakukan dan salah satunya adalah tes buta warna. Seseorang yang menderita buta warna akan otomatis gugur karena kelainan yang dimiliki meski dalam tes lain dia unggul. selain dalam hal mendapatkan pekerjaan, terkadang seorang penderita buta warna sendiri merasa minder dan menyembunyikan kelainan yang dimiliki tersebut agar tidak direndahkan dalam lingkungannya 
 
-#### Rumusan Permasalahan: 
+#### Rumusan Permasalahan
 * Bagaimana cara mengidentifikasi warna suatu objek menggunakan machine learning? 
 * Bagaimana cara mengidentifikasi seseorang yang mengidap penyakit buta warna menggunakan machine learning? 
 * Bagaimana cara menjelaskan hasil dari identifikasi warna objek pada pengidap buta warna? 
