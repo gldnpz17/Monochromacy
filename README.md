@@ -1,7 +1,7 @@
 # Monochromacy
 Aplikasi web untuk membantu penderita buta warna
 
-Monochromacy  
+daredevil  
 Ketua Kelompok:  
 Anggota 1:  
 Anggota 2:  
