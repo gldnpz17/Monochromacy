@@ -10,9 +10,9 @@ Departemen Teknologi Elektro dan Teknologi Informasi, Fakultas Teknik, Universit
 **Nama Kelompok:** Daredevil  
 **Ketua:** Firdaus Bisma Suryakusuma - 19/444051/TK/49247 (Software Engineer)  
 **Anggota:**
-Abdurikho Min Khoiri - 19/440885/TK/48679 (Cloud Engineer)
-Fathan Hudyaussie Santoso - 19/446776/TK/49881 (AI Engineer)
-Tsalis Amalia - 19/444075/TK/49271 (UI UX Designer)
+Abdurikho Min Khoiri - 19/440885/TK/48679 (Cloud Engineer)  
+Fathan Hudyaussie Santoso - 19/446776/TK/49881 (AI Engineer)  
+Tsalis Amalia - 19/444075/TK/49271 (UI UX Designer)  
 
 ---
 
