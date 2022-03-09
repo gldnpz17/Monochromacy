@@ -37,7 +37,8 @@ Buta warna merupakan kelainan yang dimiliki seseorang yang tidak mampu melihat w
 #### Ide solusi yang diusulkan beserta rancangan fitur  
 Sebuah website untuk mendeteksi warna dari sebuah benda berdasarkan input dari kamera maupun file foto. 
 
-#### Rancangan Fitur Solusi: 
+#### Rancangan Fitur Solusi
+
 |Fitur|Keterangan|
 |---|---|
 |Color Object Detector|Mengidentifikasi warna dari suatu objek|
