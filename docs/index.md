@@ -85,3 +85,55 @@ Sebuah website untuk mendeteksi warna dari sebuah benda berdasarkan input dari k
 | |Hanya tersedia untuk iOS|
 
 **Key Competitive Advantage & Unique Value:** Aplikasi Colorblind Avenger memiliki user interface yang sangat intuitif, sederhana dan mudah digunakan
+
+## SDLC  
+**Metodologi yang digunakan :** AGILE  
+**Alasan Pemilihan metodologi :** Agile adalah sekumpulan metode pengembangan software yang dilakukan secara bertahap dan berulang (iterasi). Dengan Agile, kami dapat dengan cepat menerapkan setiap feedback dari konsumen di iterasi selanjutnya. Baik itu tentang penambahan fitur atau memperbaiki bug. Agile mempunyai iterasi rutin yang fokus pada pengembangan bertahap. Jadi, pengembangan software kami akan lebih terprediksi, sehingga bisa mengetahui berbagai pengeluaran / output dengan baik.  
+
+### Perancangan
+**Tujuan Produk :** Tujuan dari produk kami adalah untuk membantu orang yang ingin mengetahui apakah mereka menderita buta warna atau tidak. Selain itu produk kami juga memiliki tujuan untuk membantu para penderita buta warna untuk mengenali warna dari suatu objek.  
+
+**Pengguna potensial dari produk dan kebutuhan para pengguna tersebut :** Pengguna dari aplikasi kami adalah mereka yang memiliki kelainan dalam melihat warna suatu objek. Selain itu juga mereka yang ingin mengetahui apakah dirinya memiliki kelainan buta warna atau tidak. Kebutuhan dari penggunanya adalah mengetahui warna yang sebenarnya dari objek yang dilihat. Karena penderita buta warna biasanya melihat warna suatu objek agak berbeda dari warna asli objek tersebut.  
+
+#### Use Case Diagram
+{diagram here}  
+
+#### Requirements untuk Use Case yang Telah Dirancang
+|FR|Deskripsi|
+|---|---|
+|FR&#160;1|End user perlu dapat melihat nama warna dalam representasi hex dan bahasa manusia untuk objek-objek yang ditangkap oleh kamera. Representasi bahasa manusia diperoleh dengan mencari warna terdekat yang ada di dalam database.|
+|FR&#160;2|End user perlu dapat memilih bahasa yang digunakan untuk representasi warna dalam bahasa manusia.|
+|FR&#160;3|End user perlu dapat mengerjakan tes buta warna untuk berbagai jenis buta warna dan mendapatkan hasil diagnosa ketika semua pertanyaan sudah dijawab.|
+|FR&#160;4|End user perlu dapat membaca dan mencari artikel berdasarkan jenis buta warna. Artikel diurutkan berdasarkan tanggal publikasi.|
+|FR&#160;5|Admin perlu dapat mengubah kata sandi akun mereka sendiri.|
+|FR&#160;6|Admin perlu dapat menambah akun admin baru dengan memasukkan username akun baru dan sistem akan men-generate kata sandi sementara untuk akun tersebut.|
+|FR&#160;7|Admin perlu dapat menghapus akun admin lain yang sudah ada namun bukan akun miliknya sendiri.|
+|FR&#160;8|Admin dapat menambahkan bahasa baru dan menghapus bahasa yang sudah ada.|
+|FR&#160;9|Admin dapat menambahkan dan menghapus representasi bahasa manusia warna tertentu untuk suatu bahasa.|
+|FR&#160;10|Admin dapat menghapus representasi bahasa manusia untuk warna.|
+|FR&#160;11|Admin dapat menulis, dan mengedit artikel terkait buta warna dalam format markdown.|
+|FR&#160;12|Admin dapat menghapus artikel yang sudah ada.|
+|FR&#160;13|Admin dapat menambahkan dan menghapus pertanyaan yang digunakan untuk tes buta warna.|
+
+#### Entity-Relationship Diagram
+{diagram here}  
+
+#### Low-Fidelity Wireframe
+|Layar|Wireframe|
+|---|---|
+|Account Management (Admin) |
+|Color Names (Admin) |
+|Articles (Admin) |
+|Article Writing and Editing (Admin) |
+|Color Blindness Test Questions (Admin) |
+|Home Page ||
+|Object Color Detector ||
+|Object Color Detector-2 ||
+|Color Blind Detector ||
+|Color Blind Detector-2 ||
+|Blogs list page ||
+|Blog-detail ||
+|About Us Page ||
+
+#### Gantt-Chart Pengerjaan Proyek dalam Kurun Waktu Satu Semester
+{chart here}  
