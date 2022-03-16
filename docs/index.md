@@ -90,15 +90,20 @@ Sebuah website untuk mendeteksi warna dari sebuah benda berdasarkan input dari k
 **Metodologi yang digunakan :** AGILE  
 **Alasan Pemilihan metodologi :** Agile adalah sekumpulan metode pengembangan software yang dilakukan secara bertahap dan berulang (iterasi). Dengan Agile, kami dapat dengan cepat menerapkan setiap feedback dari konsumen di iterasi selanjutnya. Baik itu tentang penambahan fitur atau memperbaiki bug. Agile mempunyai iterasi rutin yang fokus pada pengembangan bertahap. Jadi, pengembangan software kami akan lebih terprediksi, sehingga bisa mengetahui berbagai pengeluaran / output dengan baik.  
 
+
 ### Perancangan
 **Tujuan Produk :** Tujuan dari produk kami adalah untuk membantu orang yang ingin mengetahui apakah mereka menderita buta warna atau tidak. Selain itu produk kami juga memiliki tujuan untuk membantu para penderita buta warna untuk mengenali warna dari suatu objek.  
 
 **Pengguna potensial dari produk dan kebutuhan para pengguna tersebut :** Pengguna dari aplikasi kami adalah mereka yang memiliki kelainan dalam melihat warna suatu objek. Selain itu juga mereka yang ingin mengetahui apakah dirinya memiliki kelainan buta warna atau tidak. Kebutuhan dari penggunanya adalah mengetahui warna yang sebenarnya dari objek yang dilihat. Karena penderita buta warna biasanya melihat warna suatu objek agak berbeda dari warna asli objek tersebut.  
 
-#### Use Case Diagram
-{diagram here}  
+
+#### Use Case Diagram  
+
+![SeniorProject_PR-Kelompok-1_Diagrams-UseCaseDiagram drawio (1)](https://user-images.githubusercontent.com/55144706/158583880-3e181898-b3d8-449d-812f-24360f9acb49.png)
+
 
 #### Requirements untuk Use Case yang Telah Dirancang
+
 |FR|Deskripsi|
 |---|---|
 |FR&#160;1|End user perlu dapat melihat nama warna dalam representasi hex dan bahasa manusia untuk objek-objek yang ditangkap oleh kamera. Representasi bahasa manusia diperoleh dengan mencari warna terdekat yang ada di dalam database.|
@@ -115,25 +120,31 @@ Sebuah website untuk mendeteksi warna dari sebuah benda berdasarkan input dari k
 |FR&#160;12|Admin dapat menghapus artikel yang sudah ada.|
 |FR&#160;13|Admin dapat menambahkan dan menghapus pertanyaan yang digunakan untuk tes buta warna.|
 
+
 #### Entity-Relationship Diagram
-{diagram here}  
+
+![SeniorProject_PR-Kelompok-1_Diagrams-EntityRelationshipDiagram drawio](https://user-images.githubusercontent.com/55144706/158583932-44aba5b8-d803-473a-9e56-a6faa3bcaee0.png)
+
 
 #### Low-Fidelity Wireframe
+
 |Layar|Wireframe|
 |---|---|
-|Account Management (Admin) |
-|Color Names (Admin) |
-|Articles (Admin) |
-|Article Writing and Editing (Admin) |
-|Color Blindness Test Questions (Admin) |
-|Home Page ||
-|Object Color Detector ||
-|Object Color Detector-2 ||
-|Color Blind Detector ||
-|Color Blind Detector-2 ||
-|Blogs list page ||
-|Blog-detail ||
-|About Us Page ||
+|Account Management (Admin) |![AdminManageAccounts](https://user-images.githubusercontent.com/55144706/158582496-aeb79ed5-ed14-4556-b5be-43f9023ee505.png)|
+|Color Names (Admin) |![AdminLanguageColor](https://user-images.githubusercontent.com/55144706/158582522-b76d5a87-63a1-4cb4-9ee3-fa4eadde0394.png)|
+|Articles (Admin) |![AdminArticles](https://user-images.githubusercontent.com/55144706/158582548-f867dbd6-1cb2-44ab-8cec-db8c36a8caf3.png)|
+|Article Writing and Editing (Admin) |![AdminWriteArticle](https://user-images.githubusercontent.com/55144706/158582570-7e1dbda5-a376-45d7-ace3-b837648f5522.png)|
+|Color Blindness Test Questions (Admin) |![AdminColorBlindnessTest](https://user-images.githubusercontent.com/55144706/158582602-b7f967da-d782-4b00-b690-63ecca7a2106.png)|
+|Home Page |![Home Page](https://user-images.githubusercontent.com/55144706/158583117-6ab94a51-b547-41db-a29c-ba7b231016ae.png)|
+|Object Color Detector |![Object Color Detector](https://user-images.githubusercontent.com/55144706/158583185-415739f7-1e85-43ae-9c23-9259649b18b2.png)|
+|Object Color Detector-2 |![Object Color Detector-2](https://user-images.githubusercontent.com/55144706/158583199-27a4cffa-13f2-410b-ae32-f079ef4894dd.png)|
+|Color Blind Detector |![Color Blind Detector](https://user-images.githubusercontent.com/55144706/158583210-80a8e18c-6f07-4cf8-bd4c-6827e59bf522.png)|
+|Color Blind Detector-2 |![Color Blind Detector-2](https://user-images.githubusercontent.com/55144706/158583224-8c1a6271-ff24-483a-84c7-22fcb3ab2887.png)|
+|Blogs list page |![Blog Page](https://user-images.githubusercontent.com/55144706/158583267-13b91874-8862-4ef8-924e-7c2a42f05f0f.png)|
+|Blog-detail |![Blog-article Page](https://user-images.githubusercontent.com/55144706/158583284-ec654a39-e9e1-4724-ab51-4ae178fea553.png)|
+|About Us Page |![About Us Page](https://user-images.githubusercontent.com/55144706/158583305-c3ce8f5b-d99b-446b-9269-655c0505104d.png)|
+
 
 #### Gantt-Chart Pengerjaan Proyek dalam Kurun Waktu Satu Semester
-{chart here}  
+
+![image](https://user-images.githubusercontent.com/55144706/158583600-74e88219-2154-42ff-9b29-62018570cfba.png)
