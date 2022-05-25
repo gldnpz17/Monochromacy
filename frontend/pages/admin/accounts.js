@@ -8,34 +8,41 @@ import CreateAccountModal from "../../modals/create-account-modal"
 import { Delete } from "@mui/icons-material"
 import withLayout from "../../hoc/with-layout"
 import AdminLayout from "../../layouts/admin-layout"
-
-const columns = [
-  { field: "id", headerName: "ID", width: 350 },
-  { field: "username", headerName: "Username", flex: 1 },
-  { 
-    field: "actions", 
-    headerName: "Actions", 
-    width: 150,
-    renderCell: (params) => {
-      const client = useQueryClient()
-
-      const { mutateAsync } = useMutation(deleteAccount, {
-        onSuccess: () => {
-          client.invalidateQueries(["accounts"])
-        }
-      })
-
-      const handleDelete = async () => mutateAsync({ id: params.row.id })
-
-      return (
-        <Button onClick={handleDelete}>Delete</Button>
-      )
-    } 
-  }
-]
+import { useMemo } from "react"
 
 const AccountsPage = () => {
   const { isLoading, data } = useQuery(["accounts"], getAccounts)
+
+  const client = useQueryClient()
+    
+  const { mutateAsync } = useMutation(deleteAccount, {
+    onSuccess: () => {
+      client.invalidateQueries(["accounts"])
+    }
+  })
+
+  const handleDelete = (id) => async () => {
+    if (window.confirm("Hapus akun?")) {
+      mutateAsync({ id })
+    }
+  }
+
+  const columns = useMemo(() => {
+    return [
+      { field: "id", headerName: "ID", width: 350 },
+      { field: "username", headerName: "Username", flex: 1 },
+      { 
+        field: "actions", 
+        headerName: "Aksi", 
+        width: 150,
+        renderCell: (params) => {
+          return (
+            <Button onClick={handleDelete(params.row.id)}>Hapus</Button>
+          )
+        } 
+      }
+    ]
+  }, [])
 
   const { openModal } = useModal(CreateAccountModal)
 
