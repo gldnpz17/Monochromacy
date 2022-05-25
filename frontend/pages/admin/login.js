@@ -4,7 +4,7 @@ import { useMutation, useQueryClient, useQuery } from "react-query"
 import { getIdentity, login } from "../../api-requests/auth"
 import { useEffect } from "react"
 
-export default () => {
+export default function LoginPage() {
   const router = useRouter()
 
   const client = useQueryClient()
