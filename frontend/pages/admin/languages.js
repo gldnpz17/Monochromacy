@@ -102,7 +102,7 @@ const LanguagesPage = () => {
       <Grid container spacing={2}>
         {languages.map(language => {
           return (
-            <Grid item xs={4}>
+            <Grid item xs={4} key={language.id}>
               <LanguageCard
                 key={language.id}
                 name={language.name}
