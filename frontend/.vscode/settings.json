@@ -1,0 +1,5 @@
+{
+  "appService.showBuildDuringDeployPrompt": false,
+  "appService.defaultWebAppToDeploy": "/subscriptions/b8993f4d-90ed-48fc-acb4-2f598ade1454/microsoft.web/sites/subscriptions/b8993f4d-90ed-48fc-acb4-2f598ade1454/resourceGroups/SeniorProjectResourceGroup/providers/Microsoft.Web/sites/monochromacy",
+  "appService.deploySubpath": "."
+}
