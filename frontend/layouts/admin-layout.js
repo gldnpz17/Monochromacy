@@ -41,9 +41,6 @@ const AdminLayout = ({ children }) => {
               <Typography>Selamat datang, Admin</Typography>
             </Stack>
             <Box sx={{ flexGrow: 1 }} />
-            <IconButton onClick={() => openUpdatePasswordModal()}>
-              <Key />
-            </IconButton>
             <IconButton onClick={async () => await mutateAsync()}>
               <Logout />
             </IconButton>
@@ -53,6 +50,9 @@ const AdminLayout = ({ children }) => {
         <List>
           <Link href="/admin/languages">
             <ListItem button>Nama Warna</ListItem>
+          </Link>
+          <Link href="/admin/articles">
+            <ListItem button>Artikel</ListItem>
           </Link>
         </List>
       </Drawer>
