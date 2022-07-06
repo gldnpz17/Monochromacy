@@ -9,10 +9,11 @@ const readAll = async (req, res) => {
   const articles = await Articles.find({})
 
   res.send(articles.map(
-    ({ _id, title, content }) => ({
+    ({ _id, title, conditions, publishTimestamp }) => ({
       id: _id,
       title,
-      content
+      conditions,
+      publishTimestamp
     })
   ))
 }
