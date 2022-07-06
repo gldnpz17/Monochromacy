@@ -21,16 +21,13 @@ export default function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const { username, password } = e.target
+    const { password: { value: password } } = e.target
 
-    await mutateAsync({ 
-      username: username.value,
-      password: password.value
-    })
+    await mutateAsync({ password })
   }
 
   useEffect(() => {
-    if (!isLoading && data.account !== null) router.push("/admin/accounts")
+    if (!isLoading && data.account !== null) router.push("/admin/languages")
   }, [isLoading, data])
 
   return (
@@ -39,7 +36,6 @@ export default function LoginPage() {
         <Typography sx={{ mb: 3, fontWeight: "bold", textAlign: "center" }}>Monochromacy Admin</Typography>
         <form onSubmit={handleSubmit}>
           <Stack gap={2}>
-            <TextField label="username" name="username" />
             <TextField label="password" name="password" type="password" />
             <Button type="submit">Login</Button>
           </Stack>

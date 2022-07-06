@@ -38,13 +38,9 @@ const AdminLayout = ({ children }) => {
         <Toolbar>
           <Box sx={{ display: "flex", alignItems: "center", width: "100%" }}>
             <Stack sx={{ pr: 2 }}>
-              <Typography>Selamat datang,</Typography>
-              <Typography>{isLoading ? "" : data.account.sub}</Typography>
+              <Typography>Selamat datang, Admin</Typography>
             </Stack>
             <Box sx={{ flexGrow: 1 }} />
-            <IconButton onClick={() => openUpdatePasswordModal()}>
-              <Key />
-            </IconButton>
             <IconButton onClick={async () => await mutateAsync()}>
               <Logout />
             </IconButton>
@@ -52,17 +48,11 @@ const AdminLayout = ({ children }) => {
         </Toolbar>
         <Divider />
         <List>
-          <Link href="/admin/accounts">
-            <ListItem button>Kelola Akun Admin</ListItem>
-          </Link>
           <Link href="/admin/languages">
             <ListItem button>Nama Warna</ListItem>
           </Link>
           <Link href="/admin/articles">
             <ListItem button>Artikel</ListItem>
-          </Link>
-          <Link href="/admin/color-blindness-test">
-            <ListItem button>Tes Buta Warna</ListItem>
           </Link>
         </List>
       </Drawer>
