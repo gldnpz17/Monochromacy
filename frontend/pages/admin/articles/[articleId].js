@@ -101,6 +101,7 @@ export default withLayout(withRouter(function EditArticle({ router }) {
             <Typography>Kondisi Medis :</Typography>
             {conditions.map(condition => (
               <Button
+                key={condition.id}
                 onClick={toggleCondition(condition.id)}
                 variant={conditionSelected(condition.id) ? 'contained' : 'outlined'}
               >
