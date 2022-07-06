@@ -57,7 +57,7 @@ const ArticleCard = ({ openArticle, title, publishTimestamp, conditions }) => {
         <Typography sx={{ color: "gray" }}>{new Date(Number.parseInt(publishTimestamp)).toDateString()}</Typography>
         <Stack direction="row">
           {conditions.map(condition => (
-            <Card variant="outlined" sx={{ p: 1 }}>
+            <Card key={condition.id} variant="outlined" sx={{ p: 1 }}>
               {condition}
             </Card>
           ))}
