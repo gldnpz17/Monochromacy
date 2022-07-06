@@ -53,4 +53,6 @@ EXPOSE 3000
 
 ENV PORT 3000
 
+WORKDIR /app/app
+
 CMD ["node", "server.js"]
