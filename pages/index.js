@@ -112,6 +112,10 @@ const ArticlesSection = ({ articles, conditions }) => {
   }
 }
 
+export async function getServerSideProps() {
+  return { props: {  } }
+}
+
 export default function Home() {
   const [imageForm, setImageForm] = useState(null)
   const [boundaryMarker, setBoundaryMarker] = useState(null)
