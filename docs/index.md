@@ -144,6 +144,6 @@ Sebuah website untuk mendeteksi warna dari sebuah benda berdasarkan input dari k
 
 #### Rancangan Arsitektur Azure
 
-![architecture](https://user-images.githubusercontent.com/55144706/177806210-57c6805e-56fc-458e-bb08-8aeab36e4b11.png)
+![architecture](https://user-images.githubusercontent.com/55144706/177809086-5e1420cb-7af9-49eb-aebd-aee53b2c9e7f.png)
 
 
