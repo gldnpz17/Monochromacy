@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, FormControl, IconButton, MenuItem, Select, Stack, Typography, InputLabel, Grid } from '@mui/material'
+import { Box, Card, CardContent, FormControl, IconButton, MenuItem, Select, Stack, Typography, InputLabel, Grid, Button } from '@mui/material'
 import { Camera, ArrowBack, Replay } from "@mui/icons-material"
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useQuery } from "react-query"
@@ -112,6 +112,15 @@ const ArticlesSection = ({ articles, conditions }) => {
   }
 }
 
+const TabButton = ({ activeTab, setActiveTab, tabName, children }) => (
+  <Button
+    onClick={() => setActiveTab(tabName)}
+    variant={activeTab === tabName ? "contained" : "outlined"}
+  >
+    {children}
+  </Button>
+)
+
 export async function getServerSideProps() {
   return { props: {  } }
 }
@@ -121,6 +130,7 @@ export default function Home() {
   const [boundaryMarker, setBoundaryMarker] = useState(null)
   const [detectedObjects, setDetectedObjects] = useState(null)
   const [selectedLanguage, setSelectedLanguage] = useState(null)
+  const [activeTab, setActiveTab] = useState('color-detection')
 
   const { isLoading: languagesLoading, data: languages } = useQuery("languages", readAllLanguages)
 
@@ -257,15 +267,21 @@ export default function Home() {
   if (languagesLoading || conditionsLoading || articlesLoading) return <p>Loading...</p>
 
   return (
-    <Grid container sx={{ width: "100%", height: "100vh", p: 4 }} spacing={2}>
-      <Grid item xs={12} sx={{ justifyContent: "center", display: "flex" }}>
-        <Typography sx={{ fontSize: "2rem", fontWeight: "bold " }}>Monochromacy</Typography>
-      </Grid>
-      <Grid item xs={6} sx={{ overflowY: "scroll", minHeight: "100%", height: "0" }}>
-        <ArticlesSection conditions={conditions} articles={articles} />
-      </Grid>
-      <Grid item xs={6} sx={{ overflowY: "scroll", minHeight: "100%", height: "0" }}>
-        <Stack sx={{ alignItems: "center" }}>
+    <Box sx={{ height: "100vh", display: "flex", flexDirection: "column", p: 4 }}>
+      <Box sx={{ justifyContent: "center", display: "flex", width: "100%", pb: 2 }}>
+        <Stack alignItems="center">
+          <Typography sx={{ fontSize: "2rem", fontWeight: "bold" }}>Monochromacy</Typography>
+          <a href="https://gldnpz17.github.io/Monochromacy/">
+            <Button variant="outlined">About</Button>
+          </a>
+        </Stack>
+      </Box>
+      <Stack direction="row" justifyContent="center" sx={{ mb: 2 }} gap={2}>
+        <TabButton activeTab={activeTab} setActiveTab={setActiveTab} tabName="color-detection">Deteksi Warna</TabButton>
+        <TabButton activeTab={activeTab} setActiveTab={setActiveTab} tabName="articles">Artikel</TabButton>
+      </Stack>
+      <Box>
+        <Stack sx={{ alignItems: "center", display: activeTab === "color-detection" ? "auto" : "none" }}>
           <FormControl fullWidth sx={{ mb: 2 }}>
             <InputLabel>Bahasa</InputLabel>
             <Select label="Bahasa" value={selectedLanguage} onChange={e => setSelectedLanguage(e.target.value)}>
@@ -276,7 +292,7 @@ export default function Home() {
               }
             </Select>
           </FormControl>
-          <Box ref={canvasContainerRef} sx={{ position: "relative", width: "100%" }}>
+          <Box ref={canvasContainerRef} sx={{ position: "relative" }}>
             <video
               ref={videoRef}
               onCanPlay={handleResizeCanvas}
@@ -299,7 +315,7 @@ export default function Home() {
             {Boolean(detectedObjects) && (
               detectedObjects.map(detectedObject => {
                 const { label, confidence, color, boundaries } = detectedObject
-    
+
                 return (
                   <Card
                     variant="outlined"
@@ -332,7 +348,10 @@ export default function Home() {
             )}
           </Stack>
         </Stack>
-      </Grid>
-    </Grid>
+        <Box sx={{ display: activeTab === "articles" ? "auto" : "none" }}>
+          <ArticlesSection conditions={conditions} articles={articles} />
+        </Box>
+      </Box>
+    </Box>
   )
 }
