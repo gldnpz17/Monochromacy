@@ -99,7 +99,7 @@ Sebuah website untuk mendeteksi warna dari sebuah benda berdasarkan input dari k
 
 #### Use Case Diagram  
 
-![SeniorProject_PR-Kelompok-1_Diagrams-UseCaseDiagram drawio (1)](https://user-images.githubusercontent.com/55144706/158583880-3e181898-b3d8-449d-812f-24360f9acb49.png)
+![use-case-diagram](https://user-images.githubusercontent.com/55144706/177770812-37ccc23a-021c-423e-853d-aeacb073b397.png)
 
 
 #### Requirements untuk Use Case yang Telah Dirancang
@@ -108,41 +108,34 @@ Sebuah website untuk mendeteksi warna dari sebuah benda berdasarkan input dari k
 |---|---|
 |FR&#160;1|End user perlu dapat melihat nama warna dalam representasi hex dan bahasa manusia untuk objek-objek yang ditangkap oleh kamera. Representasi bahasa manusia diperoleh dengan mencari warna terdekat yang ada di dalam database.|
 |FR&#160;2|End user perlu dapat memilih bahasa yang digunakan untuk representasi warna dalam bahasa manusia.|
-|FR&#160;3|End user perlu dapat mengerjakan tes buta warna untuk berbagai jenis buta warna dan mendapatkan hasil diagnosa ketika semua pertanyaan sudah dijawab.|
-|FR&#160;4|End user perlu dapat membaca dan mencari artikel berdasarkan jenis buta warna. Artikel diurutkan berdasarkan tanggal publikasi.|
-|FR&#160;5|Admin perlu dapat mengubah kata sandi akun mereka sendiri.|
-|FR&#160;6|Admin perlu dapat menambah akun admin baru dengan memasukkan username akun baru dan sistem akan men-generate kata sandi sementara untuk akun tersebut.|
-|FR&#160;7|Admin perlu dapat menghapus akun admin lain yang sudah ada namun bukan akun miliknya sendiri.|
-|FR&#160;8|Admin dapat menambahkan bahasa baru dan menghapus bahasa yang sudah ada.|
-|FR&#160;9|Admin dapat menambahkan dan menghapus representasi bahasa manusia warna tertentu untuk suatu bahasa.|
-|FR&#160;10|Admin dapat menghapus representasi bahasa manusia untuk warna.|
-|FR&#160;11|Admin dapat menulis, dan mengedit artikel terkait buta warna dalam format markdown.|
-|FR&#160;12|Admin dapat menghapus artikel yang sudah ada.|
-|FR&#160;13|Admin dapat menambahkan dan menghapus pertanyaan yang digunakan untuk tes buta warna.|
+|FR&#160;3|End user perlu milhat daftar artikel dan membacanya. Daftar artikel diurutkan berdasarkan tanggal publikasi.|
+|FR&#160;4|Admin perlu dapat login dengan memasukkan kata sandi admin.|
+|FR&#160;5|Admin dapat menambahkan bahasa baru dan menghapus bahasa yang sudah ada.|
+|FR&#160;6|Admin dapat menambahkan representasi bahasa manusia warna tertentu untuk suatu bahasa.|
+|FR&#160;7|Admin dapat menghapus representasi bahasa manusia warna tertentu untuk suatu bahasa.|
+|FR&#160;8|Admin dapat membuat artikel baru dengan menginputkan judul artikel.|
+|FR&#160;9|Admin dapat mengedit konten dari artikel dalam format markdown.|
+|FR&#160;10|Admin dapat menghapus artikel yang sudah ada.|
+|FR&#160;11|Admin dapat menambahkan kondisi medis buta warna dengan menginputkan nama umum kondisi dan terminologi medisnya.|
+|FR&#160;12|Admin dapat menghapus kondisi medis buta warna.|
+|FR&#160;13|Admin dapat mengaitkan suatu artikel dengan kondisi medis buta warna tertentu.|
 
 
 #### Entity-Relationship Diagram
 
-![SeniorProject_PR-Kelompok-1_Diagrams-EntityRelationshipDiagram drawio](https://user-images.githubusercontent.com/55144706/158583932-44aba5b8-d803-473a-9e56-a6faa3bcaee0.png)
+![entity-relationship-diagram](https://user-images.githubusercontent.com/55144706/177770848-cc7c95c3-b8fa-4143-8145-9ad591493c82.png)
 
 
 #### Low-Fidelity Wireframe
 
 |Layar|Wireframe|
 |---|---|
-|Account Management (Admin) |![AdminManageAccounts](https://user-images.githubusercontent.com/55144706/158582496-aeb79ed5-ed14-4556-b5be-43f9023ee505.png)|
-|Color Names (Admin) |![AdminLanguageColor](https://user-images.githubusercontent.com/55144706/158582522-b76d5a87-63a1-4cb4-9ee3-fa4eadde0394.png)|
-|Articles (Admin) |![AdminArticles](https://user-images.githubusercontent.com/55144706/158582548-f867dbd6-1cb2-44ab-8cec-db8c36a8caf3.png)|
-|Article Writing and Editing (Admin) |![AdminWriteArticle](https://user-images.githubusercontent.com/55144706/158582570-7e1dbda5-a376-45d7-ace3-b837648f5522.png)|
-|Color Blindness Test Questions (Admin) |![AdminColorBlindnessTest](https://user-images.githubusercontent.com/55144706/158582602-b7f967da-d782-4b00-b690-63ecca7a2106.png)|
-|Home Page |![Home Page](https://user-images.githubusercontent.com/55144706/158583117-6ab94a51-b547-41db-a29c-ba7b231016ae.png)|
-|Object Color Detector |![Object Color Detector](https://user-images.githubusercontent.com/55144706/158583185-415739f7-1e85-43ae-9c23-9259649b18b2.png)|
-|Object Color Detector-2 |![Object Color Detector-2](https://user-images.githubusercontent.com/55144706/158583199-27a4cffa-13f2-410b-ae32-f079ef4894dd.png)|
-|Color Blind Detector |![Color Blind Detector](https://user-images.githubusercontent.com/55144706/158583210-80a8e18c-6f07-4cf8-bd4c-6827e59bf522.png)|
-|Color Blind Detector-2 |![Color Blind Detector-2](https://user-images.githubusercontent.com/55144706/158583224-8c1a6271-ff24-483a-84c7-22fcb3ab2887.png)|
-|Blogs list page |![Blog Page](https://user-images.githubusercontent.com/55144706/158583267-13b91874-8862-4ef8-924e-7c2a42f05f0f.png)|
-|Blog-detail |![Blog-article Page](https://user-images.githubusercontent.com/55144706/158583284-ec654a39-e9e1-4724-ab51-4ae178fea553.png)|
-|About Us Page |![About Us Page](https://user-images.githubusercontent.com/55144706/158583305-c3ce8f5b-d99b-446b-9269-655c0505104d.png)|
+|Pengelolaan Bahasa dan Warna (Admin) |![AdminLanguageColor](https://user-images.githubusercontent.com/55144706/177772713-5d3b07ad-8e95-48e4-acaf-ceb9ba9f1b84.png)|
+|Daftar Artikel (Admin) |![AdminArticles](https://user-images.githubusercontent.com/55144706/177772726-4035dbf7-0b8a-40a1-a902-03479fa4fb8e.png)|
+|Edit Artikel (Admin) |![AdminWriteArticle](https://user-images.githubusercontent.com/55144706/177772762-6c22a811-502b-4c16-936d-44dc769cbdae.png)|
+|Deteksi Warna Objek |![ColorDetection](https://user-images.githubusercontent.com/55144706/177772778-1dc90ca3-151d-41a8-80c4-4c488dbd3f60.png)|
+|Daftar Artikel |![ArticlesList](https://user-images.githubusercontent.com/55144706/177772816-890cd761-2c75-473d-9fea-fcb2b9f2a130.png)|
+|Baca Artikel |![ReadArticle](https://user-images.githubusercontent.com/55144706/177772840-d946b115-970b-4b5d-a8e6-90921a46bf98.png)|
 
 
 #### Gantt-Chart Pengerjaan Proyek dalam Kurun Waktu Satu Semester
@@ -150,5 +143,7 @@ Sebuah website untuk mendeteksi warna dari sebuah benda berdasarkan input dari k
 ![image](https://user-images.githubusercontent.com/55144706/158583600-74e88219-2154-42ff-9b29-62018570cfba.png)
 
 #### Rancangan Arsitektur Azure
-![CloudArchitectureDiagram](https://user-images.githubusercontent.com/55144706/164010175-1c049e70-d2b9-4884-9b89-7598bc642fc2.png)
+
+![architecture](https://user-images.githubusercontent.com/55144706/177809086-5e1420cb-7af9-49eb-aebd-aee53b2c9e7f.png)
+
 
